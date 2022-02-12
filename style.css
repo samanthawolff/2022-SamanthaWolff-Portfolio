@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+header {
+    background-image: url(https://wallpaperaccess.com/full/724261.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-weight:lighter;
+    font-size: 40px;
+    color: rgb(150, 89, 180);
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1:hover {
+    border-bottom: 2px solid rgb(150, 89, 180);
+}
+
+header a {
+    text-decoration: none;
+    color:rgb(150, 89, 180);
+    border: 2px solid rgb(150, 89, 180);
+}
+header a:hover {
+    background: url(https://w0.peakpx.com/wallpaper/185/403/HD-wallpaper-abstract-neon-abstract-blue-light-neon-pink-purple.jpg);
+    border: 2px double rgb(255, 51, 238);
+    color: rgb(255, 51, 238);
+}
+
+header nav {
+    float: right;
+    margin: 15px 0;
+}
+
+header nav ul {
+    display:inline;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.hero {
+    background-image: url(https://wallpaperaccess.com/full/724261.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    height: 410px;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 200px;
+    border: 2px solid rgb(150, 89, 180);
+    margin: 50px 20px 20px 20px;
+    padding: 10px;
+}
+
+.about-me h2 p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(150, 89, 180);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 200px;
+    border: 2px solid rgb(150, 89, 180);
+    margin: 20px;
+    padding: 10px;
+}
