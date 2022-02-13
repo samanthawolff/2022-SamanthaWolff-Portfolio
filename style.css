@@ -63,39 +63,48 @@ header nav ul li {
 header nav ul li a {
     padding: 10px 15px;
     font-size: 15px;
+    border-radius: 15px;
 }
 
 .hero {
     background-image: url(https://wallpaperaccess.com/full/724261.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-position: 50%;
     height: 410px;
+}
+
+.main-body {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(#11183d, #fa049e);
+    padding: 20px;
 }
 
 .about-me {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 200px;
-    border: 2px solid rgb(150, 89, 180);
-    margin: 50px 20px 20px 20px;
-    padding: 10px;
+    justify-content: center;
 }
 
-.about-me h2 p {
+.about-me h2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(150, 89, 180);
+    justify-content: center;
+    font-size: 50px;
+    border-bottom: 3px solid rgb(255, 51, 238);
+    width: 50%;
+}
+
+.about-me p {
+    margin: 20px;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 200px;
+    height: 300px;
     border: 2px solid rgb(150, 89, 180);
     margin: 20px;
     padding: 10px;
