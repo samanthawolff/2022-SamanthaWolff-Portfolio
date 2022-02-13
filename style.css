@@ -84,7 +84,7 @@ header nav ul li a {
 .about-me {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .about-me h2 {
@@ -92,12 +92,24 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: center;
     font-size: 50px;
-    border-bottom: 3px solid rgb(255, 51, 238);
-    width: 50%;
+    border-bottom: 3px solid #fa049e;
+    width: 40%;
+    height: 18%;
 }
 
 .about-me p {
     margin: 20px;
+
+}
+
+.about-me img {
+    width: 30%;
+    border-radius: 50%;
+    border: 3px solid #11183d;
+}
+
+.about-me img:hover {
+    background: none;
 }
 
 .projects {
