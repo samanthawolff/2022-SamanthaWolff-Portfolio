@@ -77,7 +77,7 @@ header nav ul li a {
 .main-body {
     display: flex;
     flex-wrap: wrap;
-    background-image: linear-gradient(#11183d, #fa049e);
+    background-image: linear-gradient(#11183d, #fa049e, #11183d);
     padding: 20px;
 }
 
@@ -88,17 +88,15 @@ header nav ul li a {
 }
 
 .about-me h2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
     font-size: 50px;
     border-bottom: 3px solid #fa049e;
-    width: 40%;
-    height: 18%;
+    margin-bottom: 20px;
 }
 
 .about-me p {
-    margin: 20px;
+    margin: 50px;
+    font-size: 25px;
 
 }
 
@@ -108,16 +106,19 @@ header nav ul li a {
     border: 3px solid #11183d;
 }
 
-.about-me img:hover {
-    background: none;
+.about-me-info {
+    display: flex;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 300px;
-    border: 2px solid rgb(150, 89, 180);
-    margin: 20px;
-    padding: 10px;
+    justify-content: space-around;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 3px solid #11183d;
+    margin-bottom: 20px;
 }
