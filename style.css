@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primaryColor: #f4d3c0;
+    --secondaryColor: #eea746;
+    --tertiaryColor: #b94723;
+}
+
 body {
     font-family: 'Inconsolata', monospace;
     background: #f6f0df;
 }
 
+
+/* Header and Navigation Section*/ 
 header {
     background-image: url(http://cdn.shopify.com/s/files/1/0337/7469/products/Abstract-Earth-Tone-Shapes-1-Wall-Mural_abb335e2-5743-4de7-b466-490d5138520b.jpg?v=1635517422);
     background-size: cover;
@@ -27,20 +35,18 @@ header {
 header h1 {
     font-weight:lighter;
     font-size: 40px;
-    color: #b94723;
-    margin: 0px;
-    padding: 0px;
+    color: var(--tertiaryColor);
 }
 
 header h1:hover {
-    color: #eea746;
-    border-bottom: 3px solid #b94723;
+    color: var(--secondaryColor);
+    border-bottom: 3px solid var(--tertiaryColor);
 }
 
 header a {
     text-decoration: none;
-    color: #b94723;
-    border: 2px solid #b94723;
+    color: var(--tertiaryColor);
+    border: 2px solid var(--tertiaryColor);
 }
 
 header a:hover {
@@ -48,13 +54,7 @@ header a:hover {
 }
 
 header nav {
-    float: right;
     margin: 15px 0;
-}
-
-header nav ul {
-    display:inline;
-    list-style: none;
 }
 
 header nav ul li {
@@ -67,6 +67,7 @@ header nav ul li a {
     border-radius: 15px;
 }
 
+/* Hero Image */
 .hero {
     background-image: url(http://cdn.shopify.com/s/files/1/0337/7469/products/Abstract-Earth-Tone-Shapes-1-Wall-Mural_abb335e2-5743-4de7-b466-490d5138520b.jpg?v=1635517422);
     background-size: cover;
@@ -75,21 +76,22 @@ header nav ul li a {
     height: 410px;
 }
 
+/* About me Section */
 .about-me {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #f4d3c0;
+    background-color: var(--primaryColor);
     margin: 40px;
     padding: 10px;
-    border: 3px solid #eea746;
+    border: 3px solid var(--secondaryColor);
 }
 
 .about-me h2 {
     text-align: center;
     font-size: 50px;
-    color: #b94723;
-    border-bottom: 3px solid #eea746;
+    color: var(--tertiaryColor);
+    border-bottom: 3px solid var(--secondaryColor);
     margin-bottom: 20px;
 }
 
@@ -100,16 +102,21 @@ header nav ul li a {
 }
 
 .about-me img {
-    width: 100%;
+    width: 400px;
+    height: auto;
     border-radius: 50%;
-    border: 3px solid #eea746;
+    border: 3px solid var(--secondaryColor);
     object-fit: cover;
 }
 
 .about-me-info {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Projects Section */
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -118,20 +125,20 @@ header nav ul li a {
     flex-direction: column;
     margin: 40px;
     padding: 10px;
-    border: 3px solid #b94723;
-    background: #eea746;
+    border: 3px solid var(--tertiaryColor);
+    background: var(--secondaryColor);
 }
 
 .project-names {
     text-align: center;
     font-size: 20px;
-    color: #b94723;
+    color: var(--tertiaryColor);
 }
 
 .projects h2 {
     font-size: 50px;
-    color:#f4d3c0;
-    border-bottom: 3px solid #b94723;
+    color: var(--primaryColor);;
+    border-bottom: 3px solid var(--tertiaryColor);
     text-align: center;
     margin-bottom: 50px;
     padding-bottom: 5px;
@@ -140,14 +147,14 @@ header nav ul li a {
 .primary-project {
     width: 630px;
     height: 400px;
-    border: 3px solid #b94723;
+    border: 3px solid var(--tertiaryColor);
     border-radius: 50px;
     margin: 10px;
 }
 
 .primary-project:hover {
     opacity: 0.75;
-    border: 3px solid #f4d3c0;
+    border: 3px solid var(--primaryColor);
 }
 
 .secondary-projects {
@@ -155,7 +162,7 @@ header nav ul li a {
 }
   
 .secondary-img {
-    border: 3px solid #b94723;
+    border: 3px solid var(--tertiaryColor);
     margin: 5px;
     border-radius: 50px;
     width: 200px;
@@ -164,15 +171,16 @@ header nav ul li a {
 
 .secondary-img:hover {
     opacity: 0.75;
-    border: 3px solid #f4d3c0;
+    border: 3px solid var(--primaryColor);
 }
 
+/* Footer and Contact section */
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: #f4d3c0;
-    border: 3px solid #eea746;
+    background: var(--primaryColor);
+    border: 3px solid var(--secondaryColor);
     font-size: 25px;
     padding: 10px;
     margin: 0 40px 20px 40px;
@@ -180,17 +188,24 @@ footer {
 }
 
 footer h3 {
-    color: #b94723;
+    color: var(--tertiaryColor);
     padding-right: 20px;
 }
 
 footer h3:hover {
-    border-bottom: 3px solid #b94723;
+    border-bottom: 3px solid var(--tertiaryColor);
 }
 
 .contact-links {
     padding-left: 20px;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    
+}
+
+
 
 @media screen and (max-width: 575px){
     .header {
