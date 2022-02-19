@@ -110,13 +110,6 @@ header nav ul li a {
     object-fit: cover;
 }
 
-/*.about-me-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 /* Projects Section */
 .projects {
     display: flex;
@@ -244,5 +237,8 @@ article a {
         font-size: 17px;
     }
     
+    header {
+        background: var(--primaryColor);
+    }
 
 }
