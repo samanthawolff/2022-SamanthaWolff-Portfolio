@@ -162,7 +162,7 @@ header nav ul li a {
     color: var(--tertiaryColor);
 }
   
-.secondary-projects img {
+.secondary-img {
     border: 3px solid var(--tertiaryColor);
     margin: 5px;
     border-radius: 50px;
