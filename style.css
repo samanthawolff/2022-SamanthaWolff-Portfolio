@@ -162,12 +162,11 @@ header nav ul li a {
     color: var(--tertiaryColor);
 }
   
-.secondary-img {
+.secondary-projects img {
     border: 3px solid var(--tertiaryColor);
     margin: 5px;
     border-radius: 50px;
-    width: 200px;
-    height: 200px;
+    width: 60%;
 }
 
 .secondary-img:hover {
@@ -237,8 +236,13 @@ article a {
 
 
 @media screen and (max-width: 575px){
-    .header {
-        position: absolute;
+    .about-me p {
+        font-size: 15px;
     }
+
+    footer h3 {
+        font-size: 17px;
+    }
+    
 
 }
